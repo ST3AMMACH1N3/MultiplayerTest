@@ -4,7 +4,7 @@ function setup() {
 	createCanvas(600,600);
 	
 	//socket = io.connect('http://localhost:3000');
-	socket = io.connect('192.168.1.86:3000');
+	socket = io.connect('https://st3ammach1n3.github.io/MultiplayerTest/platformerMultiplayer/');
 	socket.on('start', createPlayer);
 	socket.on('create', createOther);
 	socket.on('destroy', destroyOther);
